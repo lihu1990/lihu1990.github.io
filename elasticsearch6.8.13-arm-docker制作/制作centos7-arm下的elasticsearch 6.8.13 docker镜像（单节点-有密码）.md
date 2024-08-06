@@ -40,7 +40,7 @@ docker commit -a "lihu" centos01 charlesjimi/centos7:centos7-arm-jdk1.8
 
 ### 整体内容如下
 
-![image-20240805211744919](./img/image-20240805211744919.png)
+![image-20240805211744919](./nopwd-files/image-20240805211744919.png)
 
 ### Dockerfile
 
@@ -67,8 +67,8 @@ CMD ["/usr/local/elasticsearch-6.8.13/bin/elasticsearch"]
 EXPOSE 9200 9300
 ```
 
-### [其他材料](./单节点-有密码材料)
-[elasticsearch-6.8.13.tar.gz](https://www.elastic.co/cn/downloads/past-releases/elasticsearch-6-8-13)
+### [其他材料](./pwd-files/)
+[elasticsearch-6.8.13.tar.gz](https://www.elastic.co/cn/downloads/past-releases/elasticsearch-6-8-13)<br>
 [elasticsearch-analysis-ik-6.8.13.zip](https://github.com/infinilabs/analysis-ik/tags)
 
 ### 编译制作
@@ -86,4 +86,4 @@ elasticsearch-setup-passwords interactive
 #连续输入一样的密码6次即可，注意至少6位数
 ```
 
-![企业微信截图_25465df0-0770-4b28-ae2d-523be80a1eb9.png](./单节点-有密码材料/企业微信截图_25465df0-0770-4b28-ae2d-523be80a1eb9.png)
+![企业微信截图_25465df0-0770-4b28-ae2d-523be80a1eb9.png](./pwd-files/企业微信截图_25465df0-0770-4b28-ae2d-523be80a1eb9.png)
