@@ -1,0 +1,29 @@
+version: "3.4"
+services:
+  elasticsearch:
+    image: charlesjimi/elasticsearch:arm6.8.13-analysis-ik-single-node-setpwd
+    container_name: elasticsearch
+    environment:
+      - ES_JAVA_OPTS=-Xms1024m -Xmx1024m
+    volumes:
+	   # 注意映射本地日志以及数据目录，chmod 777 /home/elasticsearch/*
+       - /home/elasticsearch/data:/usr/share/elasticsearch/data
+       - /home/elasticsearch/log:/usr/share/elasticsearch/log
+    ports:
+      - 9200:9200
+      - 93003:900
+    networks:
+      - db_net
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 3
+      placement:
+        constraints:
+        - node.labels.elasticsearch == elasticsearch
+		
+networks:
+  db_net:
+     external: true

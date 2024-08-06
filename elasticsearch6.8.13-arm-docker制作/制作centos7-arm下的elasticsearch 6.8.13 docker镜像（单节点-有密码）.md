@@ -78,7 +78,7 @@ docker build -f ./Dockerfile -t charlesjimi/elasticsearch:arm6.8.13-analysis-ik-
 
 ```
 
-## 启动临时无密码的es
+## 启动临时无密码的es（注意需要设置密码的可以这么设置后就是这个密码了）
 ```shell
 docker run  --privileged -it -d --name elasticsearch01 charlesjimi/elasticsearch:arm6.8.13-analysis-ik-single-node-pwd 
 docker exec -it elasticsearch01 bash
