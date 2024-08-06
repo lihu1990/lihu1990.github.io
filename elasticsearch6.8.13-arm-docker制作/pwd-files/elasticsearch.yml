@@ -90,8 +90,7 @@ transport.tcp.port: 9300
 discovery.type: single-node
 http.cors.enabled: true
 http.cors.allow-origin: "*"
-#有密码需要注释掉
-#xpack.security.enabled: false
+xpack.security.enabled: false
 # 有密码需要新增以下
 http.cors.allow-headers: Authorization
 xpack.security.enabled: true
