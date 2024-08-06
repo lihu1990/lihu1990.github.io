@@ -42,7 +42,7 @@ docker commit -a "lihu" centos01 charlesjimi/centos7:centos7-arm-jdk1.8
 
 ### 整体内容如下
 
-![image-20240805211744919](./img/image-20240805211744919.png)
+![image-20240805211744919](./单节点-无密码材料/image-20240805211744919.png/image-20240805211744919.png)
 
 ### Dockerfile
 
